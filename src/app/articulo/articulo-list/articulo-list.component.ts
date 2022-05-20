@@ -10,6 +10,7 @@ import { ArticuloService } from '../articulo.service';
 export class ArticuloListComponent implements OnInit {
 
   articulo: Array<Articulo> = [];
+  promedioPrecio: number = 0;
   constructor(private articuloService: ArticuloService) {}
     getArticulos(): void {
         this.articuloService.getArticulos().subscribe((articulos)=>{
@@ -21,5 +22,13 @@ export class ArticuloListComponent implements OnInit {
     this.getArticulos();
   }
 
-
+  calcularPromedio(articulos: Array<Articulo>){
+    let sumaPrecios: number = 0;
+    articulos.forEach(articulo =>
+      {
+        sumaPrecios += articulo.precio;
+      }
+    )
+    this.promedioPrecio = sumaPrecios/articulos.length;
+  }
 }

@@ -1,3 +1,39 @@
-<p>
-  articulo-list works!
-</p>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-6">
+      <table class="table">
+        <thead>
+          <tr id="titulo">
+            <th class="h4">#</th>
+            <th class="h4">Nombre</th>
+            <th class="h4">Collection</th>
+            <th class="h4">Price($USD)</th>
+          </tr>
+        </thead>
+        <tbody id="series">
+          <tr *ngFor = "let s of articulo">
+            <td>
+              <dd>{{s.id}}</dd>
+            </td>
+            <td>
+              <dd>{{s.nombre}}</dd>
+            </td>
+            <td>
+              <dd>{{s.coleccion}}</dd>
+            </td>
+            <td>
+              <dd>{{s.precio}}</dd>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <br>
+    <div class="row">
+      <tr>
+        <td>Average price: {{promedioPrecio}} </td>
+      </tr>
+    </div>
+    </div>
+  </div>
+
