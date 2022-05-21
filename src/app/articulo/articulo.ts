@@ -1,22 +1,22 @@
 export class Articulo
 {
   id: number;
-  nombre: string;
-  coleccion: string;
-  precio: number;
-  descripcion: string;
-  imagen: string;
+  name: string;
+  collection: string;
+  price: number;
+  description: string;
+  image: string;
   constructor(id: number,
-    nombre: string,
-    coleccion: string,
-    precio: number,
-    descripcion: string,
-    imagen: string){
+    name: string,
+    collection: string,
+    price: number,
+    description: string,
+    image: string){
       this.id = id;
-      this.nombre = nombre;
-      this.coleccion = coleccion;
-      this.precio = precio;
-      this.descripcion = descripcion;
-      this.imagen = imagen;
+      this.name = name;
+      this.collection = collection;
+      this.price = price;
+      this.description = description;
+      this.image = image;
   }
 }

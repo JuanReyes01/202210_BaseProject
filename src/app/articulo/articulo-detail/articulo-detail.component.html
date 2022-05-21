@@ -1,17 +1,17 @@
 <div class="container-fluid">
   <div class="row">
-    <div class="col mb-2" *ngFor="let articulo of articulos ">
-          <div class="card p-2" style="width: 15rem; height: 33rem">
+
+          <div class="card p-2" style="width: 22rem; height: 50rem">
               <img
                 class="card-img-top"
-                src="{{ book.image }}"
-                alt="{{ book.name }}"
+                src="{{ articuloDetail.image }}"
+                alt="{{ articuloDetail.name }}"
               />
               <div class="card-body">
-                <h5 class="card-title">{{ book.name }}</h5>
-                  <p class="card-text">[{{ book.editorial.name }}]</p>
+                <h5 class="card-title">{{ articuloDetail.name }}</h5>
+                <p class="card-text"><small class="text-muted">{{articuloDetail.collection}}</small></p>
+                  <p class="card-text">{{articuloDetail.description }}</p>
               </div>
             </div>
       </div>
     </div>
-</div>

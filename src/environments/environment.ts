@@ -5,7 +5,7 @@
 const baseUrl = 'https://raw.githubusercontent.com/Uniandes-isis2603/recursos-isis2603/master/json/clothingitems.json';
 
 export const environment = {
-  production: false,
+  production: false ,
   baseUrl
 };
 
